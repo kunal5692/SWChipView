@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  SWChipView
 //
-//  Created by Sudam Chavan on 6/14/16.
+//  Created by kunal chavhan on 6/14/16.
 //  Copyright © 2016 kunal chavhan. All rights reserved.
 //
 

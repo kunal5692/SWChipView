@@ -1,25 +1,79 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SWChipView" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5Ns-It-bBL">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chip View" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPi-LD-2GA">
+                                        <rect key="frame" x="100" y="29" width="175" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.98039215690000003" green="0.98039215690000003" blue="0.98039215690000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.75686274509999996" green="0.1333333333" blue="0.21176470589999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="wPi-LD-2GA" firstAttribute="leading" secondItem="5Ns-It-bBL" secondAttribute="leading" constant="100" id="0yi-7T-AWt"/>
+                                    <constraint firstItem="wPi-LD-2GA" firstAttribute="leading" secondItem="5Ns-It-bBL" secondAttribute="leading" constant="166" id="FY7-BP-SdM"/>
+                                    <constraint firstItem="wPi-LD-2GA" firstAttribute="top" secondItem="5Ns-It-bBL" secondAttribute="top" constant="29" id="Tj5-J1-y8d"/>
+                                    <constraint firstAttribute="height" constant="64" id="XQo-tG-TMq"/>
+                                    <constraint firstAttribute="trailing" secondItem="wPi-LD-2GA" secondAttribute="trailing" constant="100" id="dtM-4g-AZf"/>
+                                    <constraint firstAttribute="trailing" secondItem="wPi-LD-2GA" secondAttribute="trailing" constant="167" id="xOe-NM-PDd"/>
+                                    <constraint firstItem="wPi-LD-2GA" firstAttribute="top" secondItem="5Ns-It-bBL" secondAttribute="top" constant="29" id="xWk-YE-b9l"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="FY7-BP-SdM"/>
+                                        <exclude reference="xOe-NM-PDd"/>
+                                        <exclude reference="xWk-YE-b9l"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3FQ-9X-fMj" customClass="ChipListView" customModule="SWChipView" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="101" width="375" height="141"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="Rkl-yW-XKX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="3FQ-9X-fMj" secondAttribute="trailing" id="3O4-M6-u82"/>
+                            <constraint firstItem="5Ns-It-bBL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IZo-Xk-Wys"/>
+                            <constraint firstItem="3FQ-9X-fMj" firstAttribute="top" secondItem="5Ns-It-bBL" secondAttribute="bottom" constant="37" id="T6I-Dn-f6R"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="5Ns-It-bBL" secondAttribute="bottom" constant="603" id="WQ8-KL-l7k"/>
+                            <constraint firstAttribute="trailing" secondItem="5Ns-It-bBL" secondAttribute="trailing" id="qVz-r0-ZKx"/>
+                            <constraint firstItem="3FQ-9X-fMj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="tcy-MO-3v4"/>
+                            <constraint firstItem="5Ns-It-bBL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="vyG-ar-AHG"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="WQ8-KL-l7k"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="439.5" y="465.5"/>
         </scene>
     </scenes>
 </document>

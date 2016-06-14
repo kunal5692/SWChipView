@@ -14,6 +14,12 @@
 		0CB45BEC1D0FC9CC00E91861 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0CB45BEA1D0FC9CC00E91861 /* LaunchScreen.storyboard */; };
 		0CB45BF71D0FC9CC00E91861 /* SWChipViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB45BF61D0FC9CC00E91861 /* SWChipViewTests.swift */; };
 		0CB45C021D0FC9CC00E91861 /* SWChipViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB45C011D0FC9CC00E91861 /* SWChipViewUITests.swift */; };
+		0CB45C1F1D0FD87700E91861 /* Kingfisher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0CB45C1E1D0FD87700E91861 /* Kingfisher.framework */; };
+		0CB45C211D0FD8F600E91861 /* ChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB45C201D0FD8F600E91861 /* ChipView.swift */; };
+		0CB45C231D0FD95000E91861 /* ChipListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB45C221D0FD95000E91861 /* ChipListView.swift */; };
+		0CB45C251D0FD9A000E91861 /* ChipClose.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB45C241D0FD9A000E91861 /* ChipClose.swift */; };
+		0CB45C271D0FD9CE00E91861 /* ChipAvatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB45C261D0FD9CE00E91861 /* ChipAvatar.swift */; };
+		5A13E8AF25A7DBE537CC2BC1 /* Pods_SWChipView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FE12541DC89CBDEB38C29E7 /* Pods_SWChipView.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +53,14 @@
 		0CB45BFD1D0FC9CC00E91861 /* SWChipViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWChipViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CB45C011D0FC9CC00E91861 /* SWChipViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWChipViewUITests.swift; sourceTree = "<group>"; };
 		0CB45C031D0FC9CC00E91861 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0CB45C1E1D0FD87700E91861 /* Kingfisher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Kingfisher.framework; path = "../../Library/Developer/Xcode/DerivedData/SWChipView-hhynszemurpolsajsdhmbtkvvkdg/Build/Products/Debug-iphonesimulator/Kingfisher/Kingfisher.framework"; sourceTree = "<group>"; };
+		0CB45C201D0FD8F600E91861 /* ChipView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipView.swift; sourceTree = "<group>"; };
+		0CB45C221D0FD95000E91861 /* ChipListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipListView.swift; sourceTree = "<group>"; };
+		0CB45C241D0FD9A000E91861 /* ChipClose.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipClose.swift; sourceTree = "<group>"; };
+		0CB45C261D0FD9CE00E91861 /* ChipAvatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChipAvatar.swift; sourceTree = "<group>"; };
+		207E1088FBCFF05FB05619D2 /* Pods-SWChipView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWChipView.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWChipView/Pods-SWChipView.release.xcconfig"; sourceTree = "<group>"; };
+		6FE12541DC89CBDEB38C29E7 /* Pods_SWChipView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWChipView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C06FDB702A9A7A8BDC29D94B /* Pods-SWChipView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWChipView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWChipView/Pods-SWChipView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB45C1F1D0FD87700E91861 /* Kingfisher.framework in Frameworks */,
+				5A13E8AF25A7DBE537CC2BC1 /* Pods_SWChipView.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,8 @@
 				0CB45BF51D0FC9CC00E91861 /* SWChipViewTests */,
 				0CB45C001D0FC9CC00E91861 /* SWChipViewUITests */,
 				0CB45BDF1D0FC9CC00E91861 /* Products */,
+				4936B18D743E274016277007 /* Pods */,
+				43D81AB32015E80D37444DFE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +121,10 @@
 				0CB45BE81D0FC9CC00E91861 /* Assets.xcassets */,
 				0CB45BEA1D0FC9CC00E91861 /* LaunchScreen.storyboard */,
 				0CB45BED1D0FC9CC00E91861 /* Info.plist */,
+				0CB45C201D0FD8F600E91861 /* ChipView.swift */,
+				0CB45C221D0FD95000E91861 /* ChipListView.swift */,
+				0CB45C241D0FD9A000E91861 /* ChipClose.swift */,
+				0CB45C261D0FD9CE00E91861 /* ChipAvatar.swift */,
 			);
 			path = SWChipView;
 			sourceTree = "<group>";
@@ -125,6 +147,24 @@
 			path = SWChipViewUITests;
 			sourceTree = "<group>";
 		};
+		43D81AB32015E80D37444DFE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0CB45C1E1D0FD87700E91861 /* Kingfisher.framework */,
+				6FE12541DC89CBDEB38C29E7 /* Pods_SWChipView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4936B18D743E274016277007 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C06FDB702A9A7A8BDC29D94B /* Pods-SWChipView.debug.xcconfig */,
+				207E1088FBCFF05FB05619D2 /* Pods-SWChipView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0CB45C061D0FC9CC00E91861 /* Build configuration list for PBXNativeTarget "SWChipView" */;
 			buildPhases = (
+				00B64A2E5647ABAD665BD1CF /* 📦 Check Pods Manifest.lock */,
 				0CB45BDA1D0FC9CC00E91861 /* Sources */,
 				0CB45BDB1D0FC9CC00E91861 /* Frameworks */,
 				0CB45BDC1D0FC9CC00E91861 /* Resources */,
+				E602526D8FAEDF770E3C1CC4 /* 📦 Embed Pods Frameworks */,
+				8B4186E053F1AD595D920ACC /* 📦 Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -251,13 +294,65 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		00B64A2E5647ABAD665BD1CF /* 📦 Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		8B4186E053F1AD595D920ACC /* 📦 Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWChipView/Pods-SWChipView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E602526D8FAEDF770E3C1CC4 /* 📦 Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "📦 Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SWChipView/Pods-SWChipView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0CB45BDA1D0FC9CC00E91861 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CB45C231D0FD95000E91861 /* ChipListView.swift in Sources */,
 				0CB45BE41D0FC9CC00E91861 /* ViewController.swift in Sources */,
 				0CB45BE21D0FC9CC00E91861 /* AppDelegate.swift in Sources */,
+				0CB45C251D0FD9A000E91861 /* ChipClose.swift in Sources */,
+				0CB45C271D0FD9CE00E91861 /* ChipAvatar.swift in Sources */,
+				0CB45C211D0FD8F600E91861 /* ChipView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +494,7 @@
 		};
 		0CB45C071D0FC9CC00E91861 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C06FDB702A9A7A8BDC29D94B /* Pods-SWChipView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWChipView/Info.plist;
@@ -410,6 +506,7 @@
 		};
 		0CB45C081D0FC9CC00E91861 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 207E1088FBCFF05FB05619D2 /* Pods-SWChipView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SWChipView/Info.plist;
@@ -484,6 +581,7 @@
 				0CB45C081D0FC9CC00E91861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CB45C091D0FC9CC00E91861 /* Build configuration list for PBXNativeTarget "SWChipViewTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +590,7 @@
 				0CB45C0B1D0FC9CC00E91861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0CB45C0C1D0FC9CC00E91861 /* Build configuration list for PBXNativeTarget "SWChipViewUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +599,7 @@
 				0CB45C0E1D0FC9CC00E91861 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
